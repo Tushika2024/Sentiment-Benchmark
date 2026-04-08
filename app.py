@@ -6,6 +6,12 @@ from gensim.models import KeyedVectors
 import re
 from nltk.stem import WordNetLemmatizer
 
+import nltk
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+nltk.download('punkt')
+nltk.download('stopwords')
+
 # --- CONFIG & STYLING ---
 st.set_page_config(page_title="Kindle Review Sentiment Pro", layout="wide")
 
