@@ -10,25 +10,20 @@ A comparative study of Sentiment Analysis on Kindle Book Reviews using three dis
 
 ```mermaid id="wf-final-01"
 flowchart TD
-    A["Raw Data: all_kindle_review.csv"] --> B["Preprocessing & Cleaning"]
+    A[Raw Data: CSV] --> B[Preprocessing & Cleaning]
+    B --> C1[Bag of Words]
+    B --> C2[TF-IDF]
+    B --> C3[Word2Vec]
 
-    B --> B1["Lowercasing"]
-    B1 --> B2["HTML Removal"]
-    B2 --> B3["Regex Cleaning"]
-    B3 --> B4["Stopwords Removal"]
-    B4 --> B5["Lemmatization"]
+    C1 --> D1[Logistic Regression]
+    C2 --> D2[Logistic Regression]
+    C3 --> D3[Logistic Regression]
 
-    B5 --> C1["Bag of Words"]
-    C1 --> D1["Logistic Regression (BoW)"]
+    D1 --> E[Model Comparison]
+    D2 --> E
+    D3 --> E
 
-    D1 --> C2["TF-IDF"]
-    C2 --> D2["Logistic Regression (TF-IDF)"]
-
-    D2 --> C3["Word2Vec - Vector Sum"]
-    C3 --> D3["Logistic Regression (Word2Vec)"]
-
-    D3 --> E["Model Comparison"]
-    E --> F["Streamlit Dashboard"]
+    E --> F[Streamlit Dashboard]
 ```
 
 ---
