@@ -1,0 +1,3 @@
+# Ignore the large raw CSV and the virtual environment
+kindle_venv/
+__pycache__/
