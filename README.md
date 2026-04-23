@@ -1,4 +1,4 @@
-# 📚 Kindle Review Sentiment Analysis: NLP Comparison
+# 📚 Sentiment Benchmark
 
 A comparative study of Sentiment Analysis on Kindle Book Reviews using three distinct vectorization techniques: **Bag of Words (BoW)**, **TF-IDF**, and **Word2Vec**.
 
